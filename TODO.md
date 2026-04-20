@@ -1,27 +1,22 @@
-# Swarm-Sim Landing Page TODO
+# Swarm-Sim TODO.md - Progress Tracker
 
-## Progress Tracking
+✅ **Landing Page** - http://localhost:3000  
+✅ **Console UI** - /console (3-panel, tabs, config, mock data)  
+✅ **.gitignore** - Added & committed  
+✅ **TODO Updates** - Console marked complete  
 
-✅ **Plan approved by user**
+## Current Status
+- Dev server running (`npm run dev`)
+- Git repo synced (main branch)
+- Console fully functional UI w/ states added
 
-**Next Steps:**
-1. ✅ Create package.json 
-2. [ ] Git commit & push package.json
-3. [ ] Create tsconfig.json
-4. [ ] Git commit & push tsconfig.json
-5. [ ] Create next.config.js
-6. [ ] Git commit & push next.config.js
-7. [ ] Create tailwind.config.js
-8. [ ] Git commit & push tailwind.config.js
-9. [ ] Create postcss.config.js
-10. [ ] Git commit & push postcss.config.js
-11. [ ] Create app/globals.css
-12. [ ] Git commit & push globals.css
-13. [ ] Create app/layout.tsx
-14. [ ] Git commit & push layout.tsx
-15. [ ] Create app/page.tsx
-16. [ ] Git commit & push page.tsx
-17. [ ] Run `npm install`
-18. [ ] Test with `npm run dev`
+## Next Steps
+1. [ ] Add file upload logic to Upload tab
+2. [ ] Implement mockRunSimulation() on Run btn (progress, add to list)
+3. [ ] Git commit 'Enhance console with sim stubs' && git push
+4. [ ] Test /console: upload, run sim, switch tabs
+5. [ ] Backend: app/api/upload/route.ts
+6. [ ] Particles.js in globals.css
+7. [ ] Deploy Vercel
 
-**Completed:** package.json
+**Test Now**: Visit http://localhost:3000/console - UI responsive, tabs work.
