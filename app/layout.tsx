@@ -23,6 +23,22 @@ export default function RootLayout({
       <body className={cn(
         'min-h-screen font-mono antialiased'
       )}>
+        <ToastProvider>
+          {children}
+        </ToastProvider>
+      </body>
+    </html>
+  );
+}
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return (
+    <html lang='en' className={jetbrainsMono.variable}>
+      <body className={cn(
+        'min-h-screen font-mono antialiased'
+      )}>
         {children}
       </body>
     </html>
