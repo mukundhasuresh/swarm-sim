@@ -16,8 +16,19 @@ import { cn } from '@/lib/utils';
   const [progress, setProgress] = useState(0);
   const [currentSimId, setCurrentSimId] = useState(4);
 
-  const tabs = ['Upload', 'Graph', 'Simulation', 'Report', 'Chat'] as const;
+import UploadTab from '@/components/UploadTab';
+import GraphTab from '@/components/GraphTab';
+import SimulationTab from '@/components/SimulationTab';
+import ReportTab from '@/components/ReportTab';
+import ChatTab from '@/components/ChatTab';
+import LoadingOrb from '@/components/LoadingOrb';
+import { useToast } from '@/components/ToastProvider';
+import { motion, AnimatePresence } from 'framer-motion';
+
+const tabs = ['Upload', 'Graph', 'Simulation', 'Report', 'Chat'] as const;
 type Tab = typeof tabs[number];
+
+const [activeTab, setActiveTab] = useState<Tab>('Upload');
 
 const modes = ['Public Opinion', 'Finance', 'Policy', 'Literature', 'Custom'] as const;
 const models = ['GPT-4o', 'Claude 3.5', 'Gemini 1.5'] as const;
